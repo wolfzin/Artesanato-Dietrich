@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artesanato Dietrich · Fábrica de vasos, loja e memorial em Guabiruba (demonstração)</title>
+<meta name="description" content="Fábrica de vasos de cerâmica da família Dietrich, desde a década de 1940 em Guabiruba. Loja de flores, plantas e artesanato e Memorial Willy João Dietrich. Ponto 9 da Rota do Bauer.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--terracota:#BC6127;--barro:#EE9258;--marrom:#5C2F1D;--argila:#EFE9DF;--bauer:#263742;--bauer2:#477996;--flor:#B23A2E;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;--sans:"Source Sans 3","Segoe UI",Roboto,Arial,sans-serif;--mao:"Caveat","Segoe Print","Bradley Hand",cursive}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:1.125rem;line-height:1.6;color:var(--marrom);overflow-x:hidden;
+  background-color:var(--argila);background-image:radial-gradient(rgba(92,47,29,.045) 1px,transparent 1px);background-size:5px 5px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--terracota)}
+:focus-visible{outline:3px solid var(--bauer2);outline-offset:3px}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--marrom);color:#fff;padding:.7rem 1rem;z-index:99}
+.skip:focus{top:1rem}
+.demo{background:var(--marrom);color:#f3e2d3;font-size:.8rem;text-align:center;padding:.3rem 1rem}
+.wrap{width:min(1100px,100% - 2.5rem);margin-inline:auto}
+.texto{max-width:65ch}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.15;margin:0 0 .5em;color:var(--marrom)}
+h2{font-size:clamp(1.9rem,5vw,2.9rem)}
+h2 em{font-style:italic;font-weight:500;color:var(--terracota)}
+.sobre{font-family:var(--mao);font-size:1.6rem;color:var(--terracota);display:block;line-height:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:.75rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;font-size:1.05rem;border:2px solid transparent}
+.btn-terra{background:var(--terracota);color:#fff}
+.btn-terra:hover{background:#a3521f}
+.btn-claro{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.8)}
+.btn-claro:hover{background:rgba(255,255,255,.25)}
+.btn-linha{border-color:var(--terracota);color:var(--terracota)}
+.btn-linha:hover{background:var(--terracota);color:#fff}
+/* hero full-bleed */
+.hero{position:relative;min-height:88svh;display:flex;align-items:flex-end;color:#fff;isolation:isolate;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(40,18,8,.25) 0%,rgba(40,18,8,.15) 35%,rgba(40,18,8,.88) 100%)}
+.topo{position:absolute;top:0;left:0;right:0;z-index:5}
+.topo .wrap{display:flex;justify-content:space-between;align-items:center;min-height:68px}
+.topo .marca{font-family:var(--serif);font-size:1.3rem;color:#fff;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+.topo nav{display:none;gap:1.4rem}
+.topo nav a{color:#fff;text-decoration:none;padding:.6rem 0;font-weight:600}
+@media(min-width:900px){.topo nav{display:flex}}
+.hero .wrap{padding:6rem 0 3rem}
+.hero h1{color:#fff;font-size:clamp(2.1rem,6.5vw,4rem);max-width:17ch;margin-bottom:.4em}
+.hero p{max-width:46ch;font-size:1.2rem;margin:0 0 1.6rem;color:#f6e8dc}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:.75rem}
+.selo{position:absolute;right:1.25rem;top:5rem;width:112px;height:112px;border-radius:50%;background:var(--bauer);color:#fff;display:grid;place-items:center;text-align:center;font-weight:600;font-size:.9rem;line-height:1.15;transform:rotate(-8deg);border:3px dashed rgba(255,255,255,.55);box-shadow:0 0 0 5px var(--bauer)}
+.selo b{display:block;font-family:var(--mao);font-size:2rem;line-height:1}
+@media(min-width:900px){.selo{right:6%;top:auto;bottom:4rem;width:140px;height:140px;font-size:1rem}}
+section{padding:4.5rem 0}
+/* abertura */
+.abertura .wrap{display:grid;gap:2rem}
+.abertura .texto p:first-of-type::first-letter{float:left;font-family:var(--serif);font-size:4.2rem;line-height:.85;padding:.35rem .5rem 0 0;color:var(--terracota)}
+@media(min-width:900px){.abertura .wrap{grid-template-columns:1.4fr 1fr;align-items:center}}
+.citacao-curta{font-family:var(--serif);font-style:italic;font-size:1.35rem;border-left:4px solid var(--barro);padding-left:1rem;margin:0}
+.citacao-curta small{display:block;font-family:var(--sans);font-style:normal;font-size:.9rem;color:#8a5a43;margin-top:.4rem}
+/* timeline vertical */
+.linha-tempo{list-style:none;margin:2.5rem 0 0;padding:0;position:relative}
+.linha-tempo::before{content:"";position:absolute;left:14px;top:0;bottom:0;width:2px;background:repeating-linear-gradient(var(--terracota) 0 8px,transparent 8px 14px)}
+.marco{position:relative;padding:0 0 2.6rem 3rem}
+.marco::before{content:"";position:absolute;left:5px;top:.35rem;width:20px;height:20px;border-radius:50%;background:var(--argila);border:4px solid var(--terracota)}
+.marco .ano{font-family:var(--mao);font-size:2.1rem;color:var(--terracota);line-height:1;display:block;margin-bottom:.2rem}
+.marco h3{font-size:1.35rem;margin-bottom:.3rem}
+.marco p{margin:0;max-width:60ch}
+.marco figure{margin:1rem 0 0;background:#fff;padding:.5rem .5rem .4rem;box-shadow:0 3px 12px rgba(92,47,29,.15);max-width:440px;transform:rotate(-1deg)}
+.marco:nth-child(even) figure{transform:rotate(1.2deg)}
+.marco figure img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.marco figcaption{font-family:var(--mao);font-size:1.2rem;color:#7a4a35;padding-top:.2rem}
+.marco.destaque{padding-bottom:2.6rem}
+.marco.destaque blockquote{margin:0;background:var(--marrom);color:#f6e8dc;padding:1.4rem 1.4rem 1.2rem;border-radius:4px;font-family:var(--serif);font-style:italic;font-size:1.3rem;max-width:56ch}
+@media(min-width:900px){
+  .linha-tempo::before{left:50%;margin-left:-1px}
+  .marco{width:50%;padding:0 3rem 3rem 0;text-align:right}
+  .marco::before{left:auto;right:-10px}
+  .marco figure{margin-left:auto}
+  .marco p{margin-left:auto}
+  .marco:nth-child(even){margin-left:50%;padding:0 0 3rem 3rem;text-align:left}
+  .marco:nth-child(even)::before{left:-10px;right:auto}
+  .marco:nth-child(even) figure,.marco:nth-child(even) p{margin-left:0}
+}
+/* processo: rolagem horizontal */
+.processo{background:var(--marrom);color:#f6e8dc}
+.processo h2{color:#fff}
+.processo h2 em{color:var(--barro)}
+.trilho{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:1.5rem 0 1rem;margin:0;list-style:none;-webkit-overflow-scrolling:touch}
+.trilho li{flex:0 0 78%;scroll-snap-align:start;background:#4a2517;border-radius:6px;overflow:hidden}
+@media(min-width:900px){.trilho li{flex:1 1 0}}
+.trilho img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.trilho .c{padding:1rem}
+.trilho .n{font-family:var(--mao);font-size:1.9rem;color:var(--barro);line-height:1}
+.trilho h3{color:#fff;font-size:1.25rem;margin:.2rem 0 .3rem}
+.trilho p{margin:0;font-size:1rem;color:#e9d5c6}
+.dica-rolar{font-size:.95rem;color:#d9bfae}
+@media(min-width:900px){.dica-rolar{display:none}}
+/* visita */
+.visita .wrap{display:grid;gap:2rem}
+@media(min-width:900px){.visita .wrap{grid-template-columns:1fr 1.15fr;align-items:center}}
+.visita ul{padding-left:1.2rem;margin:1rem 0}
+.visita li{margin:.3rem 0}
+.agende{background:#fff;border:2px dashed var(--terracota);border-radius:8px;padding:1.2rem;margin-top:1rem}
+.agende p{margin:0 0 .8rem}
+.mosaico{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.mosaico img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+.mosaico .m1{grid-column:1/3;aspect-ratio:16/9}
+.mosaico .m2,.mosaico .m3{aspect-ratio:1/1}
+/* loja */
+.loja{background:#f7f1e8}
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem;list-style:none;padding:0}
+@media(min-width:900px){.cats{grid-template-columns:repeat(4,1fr)}}
+.cat{background:#fff;border-radius:6px 6px 60px 6px;overflow:hidden;box-shadow:0 2px 0 rgba(92,47,29,.12)}
+.cat img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.cat h3{font-size:1.1rem;padding:.8rem .9rem 0;margin:0}
+.cat p{margin:.2rem 0 0;padding:0 .9rem 1rem;font-size:.98rem}
+/* rota do bauer */
+.rota{background:var(--bauer);color:#eaf0f4;position:relative;overflow:hidden}
+.rota h2{color:#fff}
+.rota h2 em{color:#f3c74c}
+.rota .wrap{display:grid;gap:2rem;position:relative;z-index:1}
+@media(min-width:900px){.rota .wrap{grid-template-columns:1.3fr 1fr;align-items:center}}
+.rota img{width:100%;max-width:380px;aspect-ratio:3/4;object-fit:cover;border-radius:200px 200px 8px 8px;border:6px solid #f3efe6;margin-inline:auto}
+.rota blockquote{margin:1.4rem 0;font-family:var(--serif);font-style:italic;font-size:1.3rem;color:#fff;border-left:4px solid var(--flor);padding-left:1rem}
+.rota cite{display:block;font-family:var(--sans);font-style:normal;font-size:.95rem;color:#b9cbd8;margin-top:.4rem}
+.rota a{color:#f3c74c}
+.flor{position:absolute;width:150px;height:150px;opacity:.9;z-index:0}
+.flor.a{top:-30px;left:-30px}.flor.b{bottom:-40px;right:-30px;transform:rotate(180deg)}
+/* imprensa */
+.imprensa ul{list-style:none;padding:0;margin:1.6rem 0 0;border-top:1px solid #d7c7b5}
+.imprensa li{border-bottom:1px solid #d7c7b5}
+.imprensa a{display:grid;grid-template-columns:4.5rem 1fr;gap:1rem;padding:.9rem 0;text-decoration:none;color:var(--marrom);min-height:44px}
+.imprensa a:hover .tit{text-decoration:underline;color:var(--terracota)}
+.imprensa .a{font-family:var(--mao);font-size:1.6rem;color:var(--terracota);line-height:1}
+.imprensa .veic{display:block;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:#8a5a43}
+.imprensa .tit{font-family:var(--serif);font-size:1.1rem}
+/* avaliações */
+.aval .topo-aval{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.aval .num{font-family:var(--serif);font-size:3.4rem;color:var(--terracota);line-height:1}
+.cartas{display:grid;gap:1.2rem;margin-top:1.6rem}
+@media(min-width:900px){.cartas{grid-template-columns:repeat(3,1fr)}}
+.carta{margin:0;background:#fffdf8;padding:1.4rem;border-radius:2px;box-shadow:0 1px 0 #d9c9b6,0 8px 18px -12px rgba(92,47,29,.4);position:relative}
+.carta::before{content:"";position:absolute;top:-8px;left:50%;width:70px;height:18px;margin-left:-35px;background:rgba(238,146,88,.45);transform:rotate(-3deg)}
+.carta blockquote{margin:0 0 .8rem;font-family:var(--serif);font-style:italic;font-size:1.08rem}
+.carta figcaption{font-size:.95rem;color:#8a5a43}
+/* contato */
+.contato{background:var(--terracota);color:#fff}
+.contato h2{color:#fff}
+.contato .wrap{display:grid;gap:2rem}
+@media(min-width:900px){.contato .wrap{grid-template-columns:1fr 1fr}}
+.contato dl{margin:0}
+.contato dt{font-family:var(--mao);font-size:1.5rem;color:#ffe0c9;margin-top:.8rem}
+.contato dd{margin:0}
+.contato a{color:#fff}
+.contato .btn-terra{background:#fff;color:var(--terracota)}
+.contato .btn-claro{border-color:#fff}
+.contato ul{list-style:none;padding:0;margin:.4rem 0 0}
+.contato li a{display:inline-flex;align-items:center;min-height:44px}
+footer{background:#3b1d12;color:#d7bfae;padding:2rem 0;font-size:.9rem}
+footer p{margin:0 0 .4rem;max-width:75ch}
+/* ===== Movimento (WolfStudio v3) — só roda com JS e sem "reduzir movimento" ===== */
+:root{--e:cubic-bezier(.2,.7,.2,1)}
+.anim :is(.wrap>.sobre,.wrap>h2,.abertura .texto,.citacao-curta,.marco,.trilho li,.visita .texto,.mosaico img,.loja .wrap>.texto,.cat,.rota .wrap>div,.rota .wrap>img,.imprensa li,.topo-aval,.carta,.contato .wrap>div){transition:opacity .7s var(--e) var(--d,0ms),translate .8s var(--e) var(--d,0ms),scale .8s var(--e) var(--d,0ms),rotate .8s var(--e) var(--d,0ms),transform .35s var(--e),box-shadow .35s,border-color .25s,background-color .25s}
+.anim :is(.wrap>.sobre,.wrap>h2,.abertura .texto,.citacao-curta,.marco,.trilho li,.visita .texto,.mosaico img,.loja .wrap>.texto,.cat,.rota .wrap>div,.rota .wrap>img,.imprensa li,.topo-aval,.carta,.contato .wrap>div):not(.in){opacity:0;translate:var(--tx,0px) var(--ty,22px);scale:var(--sc,1)}
+@keyframes sobe{from{opacity:0;translate:0 18px}}
+@keyframes gira{to{rotate:360deg}}
+@media print{.anim *{opacity:1!important;translate:none!important;scale:none!important;clip-path:none!important}}
+/* botões e menu */
+.btn{transition:background-color .2s,color .2s,transform .25s var(--e),box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 16px -10px rgba(40,18,8,.7)}
+.btn:active{transform:translateY(0) scale(.98)}
+.topo nav a{position:relative}
+.topo nav a::after{content:"";position:absolute;left:0;right:0;bottom:.35rem;height:2px;background:var(--barro);scale:0 1;transform-origin:0 50%;transition:scale .35s var(--e)}
+.topo nav a:hover::after{scale:1 1}
+/* hero: foto assenta devagar, texto sobe, selo "carimba" */
+.hero>img{scale:1.06;translate:0 var(--py,0px);animation:kb 2.2s var(--e) both}
+@keyframes kb{from{scale:1.16}}
+.topo{animation:desce .7s var(--e) both}
+@keyframes desce{from{opacity:0;translate:0 -12px}}
+.hero h1{animation:sobe .9s var(--e) .15s both}
+.hero .wrap>p{animation:sobe .9s var(--e) .3s both}
+.hero .acoes{animation:sobe .9s var(--e) .45s both}
+.selo{animation:carimbo .7s cubic-bezier(.3,1.5,.5,1) .9s both;transition:rotate .5s var(--e)}
+.selo:hover{rotate:8deg}
+@keyframes carimbo{from{opacity:0;scale:1.7;rotate:-25deg}}
+/* linha do tempo: o tracejado desce com a rolagem, os marcos entram do seu lado */
+.anim .linha-tempo::before{clip-path:inset(0 0 calc(100% - var(--p,0)*100%) 0)}
+.anim .marco{--ty:26px}
+.marco::before{transition:scale .5s cubic-bezier(.3,1.6,.5,1) .2s}
+.anim .marco:not(.in)::before{scale:0}
+@media(min-width:900px){.anim .marco{--tx:-34px;--ty:0px}.anim .marco:nth-child(even){--tx:34px}}
+.marco figure{transition:transform .45s var(--e),box-shadow .45s}
+.marco:nth-child(n) figure:hover{transform:rotate(0deg) scale(1.03);box-shadow:0 14px 28px -12px rgba(92,47,29,.45)}
+/* processo, loja, mosaico */
+.trilho li:hover{transform:translateY(-4px)}
+.trilho img,.cat img{transform-origin:50% 100%;transition:scale .7s var(--e)}
+.trilho li:hover img,.cat:hover img{scale:1.06}
+.cat:hover{transform:translateY(-5px);box-shadow:0 14px 24px -14px rgba(92,47,29,.5)}
+.anim .mosaico img{--sc:.96;--ty:14px}
+.anim .citacao-curta{--tx:24px;--ty:0px}
+/* rota do bauer */
+.flor.a{animation:gira 70s linear infinite}
+.flor.b{animation:gira 90s linear infinite reverse}
+.anim .rota .wrap>img{--sc:.94;--ty:0px}
+/* imprensa e avaliações */
+.anim .imprensa li{--ty:12px}
+.imprensa a{transition:padding-left .3s var(--e),background-color .3s}
+.imprensa a:hover{padding-left:.6rem;background:rgba(238,146,88,.1)}
+.carta:hover{transform:translateY(-4px) rotate(-.6deg)}
+.aval .num{font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+<script>(function(d){if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches)d.classList.add('anim')})(document.documentElement)</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="demo" role="note">Demonstração WolfStudio — não é o site oficial.</div>
+
+<header class="hero" aria-labelledby="titulo">
+  <div class="topo"><div class="wrap">
+    <a class="marca" href="#conteudo">Artesanato Dietrich</a>
+    <nav aria-label="Seções"><a href="#historia">História</a><a href="#processo">Da argila ao forno</a><a href="#visita">Memorial</a><a href="#loja">Loja</a><a href="#contato">Visite</a></nav>
+  </div></div>
+  <img src="assets/maos-modelando-vaso-no-torno.jpg" width="960" height="640" alt="Mãos sujas de barro modelando um vaso no torno" fetchpriority="high">
+  <div class="selo" aria-label="Ponto 9 da Rota do Bauer"><span><b>nº 9</b>Rota do Bauer</span></div>
+  <div class="wrap">
+    <h1 id="titulo">Desde a década de 1940, moldando vasos à mão em Guabiruba</h1>
+    <p>Fábrica de vasos, loja e memorial da família Dietrich, na Rua São Pedro.</p>
+    <div class="acoes">
+      <a class="btn btn-terra" href="tel:+554733542573">Agendar visita · (47) 3354-2573</a>
+      <a class="btn btn-claro" href="https://www.google.com/maps?cid=2532420938247145851" target="_blank" rel="noopener">Como chegar</a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="abertura" aria-labelledby="t-ab">
+    <div class="wrap">
+      <div class="texto">
+        <span class="sobre">a família, o barro e o torno</span>
+        <h2 id="t-ab">Uma fábrica que <em>não saiu do lugar</em></h2>
+        <p>No bairro São Pedro, a cerca de 4 km do Centro de Guabiruba, a família Dietrich faz vasos de cerâmica no mesmo terreno desde 1946. Em frente à fábrica fica a loja de flores, plantas e artesanato. Ao lado, o memorial conta a história do fundador, Willy João Dietrich.</p>
+        <p>Hoje a produção é de vasos menores e de modelos para orquídeas, feitos no torno, nas máquinas e no forno da própria fábrica.</p>
+      </div>
+      <p class="citacao-curta">“A única fábrica de vasos da região ainda em operação.”<small>O Município, 2018</small></p>
+    </div>
+  </section>
+
+  <section id="historia" aria-labelledby="t-hist" style="padding-top:1rem">
+    <div class="wrap">
+      <span class="sobre">linha do tempo</span>
+      <h2 id="t-hist">Três gerações <em>na argila</em></h2>
+      <ol class="linha-tempo">
+        <li class="marco"><span class="ano">década de 1940</span><h3>O torno feito em casa</h3><p>O pai de Willy João Dietrich tinha uma olaria de tijolos. Willy construiu um torno e aprendeu o ofício sozinho.</p>
+          <figure><img src="assets/detalhe-jarra-no-torno.jpg" width="960" height="640" loading="lazy" alt="Jarra de barro molhado girando no torno"><figcaption>o barro no torno</figcaption></figure></li>
+        <li class="marco"><span class="ano">1946</span><h3>Hilária e a pequena fábrica</h3><p>Willy casa com Hilária e monta a pequena fábrica, que continua no mesmo lugar até hoje.</p></li>
+        <li class="marco destaque"><span class="ano">de porta em porta</span><blockquote>Dona Hilária vendia os vasos de porta em porta, de carroça, em Brusque.</blockquote></li>
+        <li class="marco"><span class="ano">1979</span><h3>Os filhos seguem</h3><p>Willy falece. Hilária administra, e os filhos Guido e João Vili ficam na produção. Mais tarde, João Vili assume a fábrica.</p>
+          <figure><img src="assets/joao-modelando-vaso-retrato.jpg" width="960" height="640" loading="lazy" alt="Seu João Vili Dietrich, de óculos e blusa verde, modelando um vaso no torno"><figcaption>Seu João no torno</figcaption></figure></li>
+        <li class="marco"><span class="ano">2006</span><h3>A loja em frente à fábrica</h3><p>No ano em que dona Hilária falece, a família abre a loja de flores, decoração e artesanato.</p>
+          <figure><img src="assets/fachada-loja-dietrich-antiga.jpg" width="1024" height="683" loading="lazy" alt="Fachada da loja Artesanato Dietrich: casa creme com telhado de telha e placa"><figcaption>a loja, numa foto mais antiga</figcaption></figure></li>
+        <li class="marco"><span class="ano">21 out. 2018</span><h3>O Memorial</h3><p>Inauguração do Memorial da Fábrica de Vasos Willy João Dietrich, no dia em que se completavam 39 anos da morte do fundador, com recursos do Fundo Municipal de Apoio à Cultura.</p>
+          <figure><img src="assets/memorial-interior-paineis.jpg" width="1417" height="945" loading="lazy" alt="Interior do memorial: parede de madeira com painéis, fotos antigas e quadros, mesa com toalha de crochê"><figcaption>painéis e fotos da família</figcaption></figure></li>
+        <li class="marco"><span class="ano">2 nov. 2024</span><h3>O documentário</h3><p>Estreia de “Artesanato Dietrich: uma história moldada na argila”, com cerca de 12 minutos, com Guido, Ivone, João Vili e Guilherme Dietrich. A trilha é de Bruno Carminati, bisneto do fundador.</p></li>
+        <li class="marco"><span class="ano">24 set. 2026</span><h3>Rota do Bauer</h3><p>A fábrica recebe o lançamento oficial da Rota do Bauer, com os representantes dos 20 pontos. O Artesanato Dietrich é o ponto 9.</p>
+          <figure><img src="assets/fachada-2026-poste-pintado-bauer.jpg" width="1296" height="972" loading="lazy" alt="Fachada em 2026: casa creme com placa Dietrich, vasos, flores e poste de madeira pintado em Bauernmalerei"><figcaption>o poste pintado em Bauer, 2026</figcaption></figure></li>
+        <li class="marco"><span class="ano">hoje</span><h3>A família no balcão e no torno</h3><p>Seu João Vili segue na produção com a esposa, dona Rosália, a filha Vanessa, que pinta Bauernmalerei nas peças, e o genro Emiliano.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="processo" id="processo" aria-labelledby="t-proc">
+    <div class="wrap">
+      <span class="sobre" style="color:var(--barro)">mão na massa</span>
+      <h2 id="t-proc">Da argila <em>ao forno</em></h2>
+      <p class="dica-rolar">Arraste para o lado para ver os cinco passos →</p>
+      <ol class="trilho" tabindex="0" aria-label="Etapas da produção">
+        <li><img src="assets/maos-abrindo-vaso-no-torno.jpg" width="960" height="640" loading="lazy" alt="Mãos abrindo a boca de um vaso de argila no torno"><div class="c"><span class="n">1</span><h3>Argila crua</h3><p>O barro vai para o torno e as mãos abrem a peça.</p></div></li>
+        <li><img src="assets/joao-acabamento-jarra.jpg" width="960" height="640" loading="lazy" alt="Seu João fazendo o acabamento de uma jarra"><div class="c"><span class="n">2</span><h3>Torno</h3><p>Modelagem e acabamento, peça por peça.</p></div></li>
+        <li><img src="assets/fabrica-prateleiras-pecas-cruas-2-2026.jpg" width="1296" height="972" loading="lazy" alt="Prateleiras de madeira com pratos e vasos de argila crua secando"><div class="c"><span class="n">3</span><h3>Secagem</h3><p>As peças cruas secam nas prateleiras de tábua da fábrica.</p></div></li>
+        <li><img src="assets/gmaps-fabrica-maquinas-forno.jpg" width="1600" height="1200" loading="lazy" alt="Interior da fábrica com máquina, carrinho, pilhas de vasos e porta do forno de tijolo"><div class="c"><span class="n">4</span><h3>Forno</h3><p>Depois de secas, vão para o forno de tijolo e ganham a cor do barro queimado.</p></div></li>
+        <li><img src="assets/ceramica-pintada-bauernmalerei-azul-2026.jpg" width="1296" height="972" loading="lazy" alt="Peça de cerâmica azul em forma de casinha com flores pintadas em Bauernmalerei"><div class="c"><span class="n">5</span><h3>Pintura Bauer</h3><p>Algumas peças recebem flores em Bauernmalerei, pintadas pela Vanessa.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="visita" id="visita" aria-labelledby="t-vis">
+    <div class="wrap">
+      <div class="texto">
+        <span class="sobre">memorial e fábrica</span>
+        <h2 id="t-vis">Venha ver <em>como se faz</em></h2>
+        <p>No memorial e na fábrica, o visitante vê:</p>
+        <ul>
+          <li>painéis, fotos históricas e recortes de jornal;</li>
+          <li>objetos de época e um vídeo sobre a família;</li>
+          <li>o torno antigo, tocado a pé;</li>
+          <li>com o Seu João, o caminho da argila crua ao torno, às máquinas, ao forno e ao acabamento.</li>
+        </ul>
+        <div class="agende">
+          <p><strong>Grupos e escolas:</strong> agende a visita por telefone.</p>
+          <a class="btn btn-terra" href="tel:+554733542573">Ligar (47) 3354-2573</a>
+        </div>
+      </div>
+      <div class="mosaico">
+        <img class="m1" src="assets/memorial-grupo-de-visitantes.jpg" width="1600" height="1067" loading="lazy" alt="Grupo de visitantes dentro do memorial ouvindo a explicação">
+        <img class="m2" src="assets/memorial-mesa-e-paineis-2026.jpg" width="1296" height="972" loading="lazy" alt="Mesa com toalha e chaleira diante dos painéis Fábrica de Vasos na parede de madeira">
+        <img class="m3" src="assets/fabrica-galpao-torno.jpg" width="960" height="640" loading="lazy" alt="Galpão da fábrica com artesão no torno e prateleiras com vasos">
+      </div>
+    </div>
+  </section>
+
+  <section class="loja" id="loja" aria-labelledby="t-loja">
+    <div class="wrap">
+      <span class="sobre">em frente à fábrica</span>
+      <h2 id="t-loja">A loja</h2>
+      <p class="texto">Vasos de cerâmica feitos ali mesmo, plantas naturais, flores, terra e artesanato.</p>
+      <ul class="cats">
+        <li class="cat"><img src="assets/loja-vasos-ceramica-e-plantas.jpg" width="1024" height="683" loading="lazy" alt="Vasos de cerâmica de vários tamanhos com plantas na loja"><h3>Vasos de cerâmica</h3><p>Inclusive modelos para orquídeas.</p></li>
+        <li class="cat"><img src="assets/gmaps-plantas-em-vasos-loja.jpg" width="1600" height="1200" loading="lazy" alt="Plantas de bambu-da-sorte em vasos brancos na loja"><h3>Flores e plantas</h3><p>Plantas naturais, flores e terra.</p></li>
+        <li class="cat"><img src="assets/loja-figuras-ceramica-galos-patos-2026.jpg" width="1296" height="972" loading="lazy" alt="Prateleira com figuras de cerâmica pintadas: galos, patos, cogumelos e bonecos"><h3>Decoração e artesanato</h3><p>Figuras de cerâmica pintadas: galos, patos, cogumelos e bonecos.</p></li>
+        <li class="cat"><img src="assets/gmaps-vaso-boneco-pintado.jpg" width="900" height="1200" loading="lazy" alt="Vaso em forma de boneco, pintado com rosto e roupa vermelha, com planta"><h3>Peças pintadas</h3><p>Cerâmica com pintura, incluindo Bauernmalerei.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="rota" aria-labelledby="t-rota">
+    <svg class="flor a" viewBox="0 0 100 100" aria-hidden="true"><g transform="translate(50 50)"><g fill="#B23A2E"><ellipse rx="10" ry="22" transform="translate(0 -20)"/><ellipse rx="10" ry="22" transform="rotate(72) translate(0 -20)"/><ellipse rx="10" ry="22" transform="rotate(144) translate(0 -20)"/><ellipse rx="10" ry="22" transform="rotate(216) translate(0 -20)"/><ellipse rx="10" ry="22" transform="rotate(288) translate(0 -20)"/></g><circle r="9" fill="#F3C74C"/><g fill="#fff"><circle r="2" cx="-3" cy="-2"/><circle r="2" cx="3" cy="2"/></g></g></svg>
+    <svg class="flor b" viewBox="0 0 100 100" aria-hidden="true"><g transform="translate(50 50)"><g fill="#477996"><ellipse rx="9" ry="20" transform="translate(0 -19)"/><ellipse rx="9" ry="20" transform="rotate(60) translate(0 -19)"/><ellipse rx="9" ry="20" transform="rotate(120) translate(0 -19)"/><ellipse rx="9" ry="20" transform="rotate(180) translate(0 -19)"/><ellipse rx="9" ry="20" transform="rotate(240) translate(0 -19)"/><ellipse rx="9" ry="20" transform="rotate(300) translate(0 -19)"/></g><circle r="8" fill="#fff"/><circle r="4" fill="#B23A2E"/></g></svg>
+    <div class="wrap">
+      <div>
+        <span class="sobre" style="color:#f3c74c">ponto 9</span>
+        <h2 id="t-rota">Aqui começou a <em>Rota do Bauer</em></h2>
+        <p class="texto">Em 24 de setembro de 2026, o Artesanato Dietrich recebeu o lançamento oficial da Rota do Bauer, o circuito de 20 pontos dedicados à pintura Bauernmalerei em Guabiruba. A pintura é Patrimônio Cultural Imaterial do município desde julho de 2026.</p>
+        <blockquote>“Esse projeto é quase um presente pra gente que faz o Bauer…”<cite>Vanessa Dietrich Carminati, ao Guabiruba Zeitung</cite></blockquote>
+        <p><a href="https://guabirubazeitung.com.br/rota-do-bauer-guabiruba-apresenta-novo-circuito-turistico-e-cultural/" target="_blank" rel="noopener">Ler a matéria sobre a Rota do Bauer</a></p>
+      </div>
+      <img src="assets/gmaps-fachada-visitantes-poste-bauer.jpg" width="676" height="1200" loading="lazy" alt="Frente da loja com visitantes sentados ao lado do poste de madeira pintado em Bauernmalerei">
+    </div>
+  </section>
+
+  <section class="imprensa" aria-labelledby="t-imp">
+    <div class="wrap">
+      <span class="sobre">recortes</span>
+      <h2 id="t-imp">Na imprensa</h2>
+      <ul>
+        <li><a href="https://omunicipio.com.br/cultura/guabiruba-ganha-rota-turistica-dedicada-a-tradicional-pintura-bauernmalerei-confira-os-atrativos/" target="_blank" rel="noopener"><span class="a">2026</span><span><span class="veic">O Município</span><span class="tit">Guabiruba ganha rota turística dedicada à tradicional pintura Bauernmalerei</span></span></a></li>
+        <li><a href="https://www.diplomatafm.com.br/2026/09/25/guabiruba-lanca-rota-do-bauer-com-20-pontos-dedicados-a-arte-a-cultura-e-ao-turismo/" target="_blank" rel="noopener"><span class="a">2026</span><span><span class="veic">Diplomata FM</span><span class="tit">Guabiruba lança Rota do Bauer com 20 pontos dedicados à arte, à cultura e ao turismo</span></span></a></li>
+        <li><a href="https://guabirubazeitung.com.br/rota-do-bauer-guabiruba-apresenta-novo-circuito-turistico-e-cultural/" target="_blank" rel="noopener"><span class="a">2026</span><span><span class="veic">Guabiruba Zeitung</span><span class="tit">Rota do Bauer: Guabiruba apresenta novo circuito turístico e cultural</span></span></a></li>
+        <li><a href="https://guabirubazeitung.com.br/documentario-sobre-artesanato-guabirubense-estreia-em-novembro/" target="_blank" rel="noopener"><span class="a">2024</span><span><span class="veic">Guabiruba Zeitung</span><span class="tit">Documentário sobre artesanato guabirubense estreia em novembro</span></span></a></li>
+        <li><a href="https://omunicipio.com.br/noticia/memorial-da-fabrica-de-vasos-willy-joao-dietrich-e-o-novo-ponto-turistico-de-guabiruba/" target="_blank" rel="noopener"><span class="a">2018</span><span><span class="veic">O Município</span><span class="tit">Memorial da Fábrica de Vasos Willy João Dietrich é o novo ponto turístico de Guabiruba</span></span></a></li>
+        <li><a href="https://guabiruba.sc.gov.br/noticia-519822-2/" target="_blank" rel="noopener"><span class="a">2018</span><span><span class="veic">Prefeitura de Guabiruba</span><span class="tit">Notícia sobre a inauguração do memorial</span></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="aval" aria-labelledby="t-aval" style="padding-top:1rem">
+    <div class="wrap">
+      <div class="topo-aval"><h2 id="t-aval">Quem visitou</h2><span class="num">4,9★</span><span>41 avaliações no Google</span></div>
+      <div class="cartas">
+        <figure class="carta"><blockquote>Boa variedade de plantas e vasos. O museu anexo é sensacional e conta a história centenária de gerações. As peças artesanais são feitas com muito carinho.</blockquote><figcaption>Adelir Inês Bellé Ramon · jul/2021</figcaption></figure>
+        <figure class="carta"><blockquote>A loja é super aconchegante. Possui estacionamento próprio, facilidade de pagamento e ótimo atendimento. A loja tem uma grande variedade de plantas, flores, vasos...</blockquote><figcaption>Ivan Boos · abr/2022</figcaption></figure>
+        <figure class="carta"><blockquote>Ótimo local para se comprar um bom vaso e uma ótima flor. Recomendo. Ótimos preços.</blockquote><figcaption>Jeferson Rengel · nov/2020</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato" aria-labelledby="t-cont">
+    <div class="wrap">
+      <div>
+        <h2 id="t-cont">Visite a fábrica</h2>
+        <dl>
+          <dt>endereço</dt><dd>Rua São Pedro, 2316, bairro São Pedro<br>Guabiruba/SC · 88360-000 · cerca de 4 km do Centro</dd>
+          <dt>horário</dt><dd>Segunda a sexta: 8h às 12h e 13h30 às 18h<br>Sábado: 8h às 12h · Domingo: fechado</dd>
+          <dt>telefone</dt><dd><a href="tel:+554733542573">(47) 3354-2573</a></dd>
+        </dl>
+        <!-- Número (2316 x 2306) e horário: confirmar com a família antes de publicar. -->
+      </div>
+      <div>
+        <div style="display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.6rem">
+          <a class="btn btn-terra" href="tel:+554733542573">Ligar</a>
+          <a class="btn btn-claro" href="https://www.google.com/maps?cid=2532420938247145851" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+        <ul>
+          <li><a href="mailto:artedietrich@gmail.com">artedietrich@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/artesanatodietrich/" target="_blank" rel="noopener">Instagram @artesanatodietrich</a></li>
+          <li><a href="https://www.facebook.com/artesanatodietrich" target="_blank" rel="noopener">Facebook Artesanato Dietrich</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Demonstração feita por WolfStudio (Lucas Wolf, Guabiruba/SC). Não é o site oficial do Artesanato Dietrich. Fotos: Jailson Pollheim (portal de turismo de Guabiruba), Sophia Ribeiro/O Município e Google Maps, usadas só nesta demonstração.</p>
+    <p>Outros trabalhos: catálogo digital da JE7 (empresa de fora de Guabiruba) e site Etiquetas Guabiruba, feito para a família do Lucas.</p>
+  </div>
+</footer>
+<script>
+/* Movimento (WolfStudio v3): revelar ao rolar, contadores e menu ativo. */
+(function(){
+  var R=document.documentElement; if(!R.classList.contains('anim')) return;
+  try{
+    var SEL='.wrap>.sobre,.wrap>h2,.abertura .texto,.citacao-curta,.marco,.trilho li,.visita .texto,.mosaico img,.loja .wrap>.texto,.cat,.rota .wrap>div,.rota .wrap>img,.imprensa li,.topo-aval,.carta,.contato .wrap>div', CNT='.aval .num';
+    var io=new IntersectionObserver(function(es){
+      var n=0;
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var el=e.target; io.unobserve(el);
+        if(n) el.style.setProperty('--d',Math.min(n,7)*90+'ms');
+        n++; el.classList.add('in');
+        setTimeout(function(){el.style.removeProperty('--d')},1700);
+      });
+    },{threshold:.08,rootMargin:'0px 0px -5% 0px'});
+    var pend=[].slice.call(document.querySelectorAll(SEL));
+    pend.forEach(function(el){io.observe(el)});
+    /* rolagem rápida pode pular um bloco: o que já ficou para cima aparece sem esperar */
+    var tv=0;
+    function varre(){pend=pend.filter(function(el){
+      if(el.classList.contains('in')) return false;
+      if(el.getBoundingClientRect().bottom<0){io.unobserve(el);el.classList.add('in');return false}
+      return true;
+    })}
+
+    function conta(el){
+      var tn=null;
+      [].some.call(el.childNodes,function(c){if(c.nodeType===3&&/\d,\d/.test(c.nodeValue)){tn=c;return true}});
+      if(!tn) return;
+      var full=tn.nodeValue, m=full.match(/(\d+),(\d)/), alvo=parseFloat(m[1]+'.'+m[2]), t0=null;
+      function f(t){
+        if(!t0) t0=t;
+        var p=Math.min(1,(t-t0)/1100), v=alvo*(1-Math.pow(1-p,3));
+        tn.nodeValue=p<1?full.replace(m[0],v.toFixed(1).replace('.',',')):full;
+        if(p<1) requestAnimationFrame(f);
+      }
+      requestAnimationFrame(f);
+    }
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){cio.unobserve(e.target);conta(e.target)}})},{threshold:.6});
+    [].forEach.call(document.querySelectorAll(CNT),function(el){cio.observe(el)});
+
+    var links=[].slice.call(document.querySelectorAll('nav a[href^="#"]')), mapa={};
+    var sio=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      links.forEach(function(a){a.classList.remove('on')}); mapa[e.target.id].classList.add('on');
+    })},{rootMargin:'-40% 0px -55% 0px'});
+    links.forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1)); if(s&&s.id!=='conteudo'){mapa[s.id]=a;sio.observe(s)}});
+
+    var hero=document.querySelector('.hero>img'), lt=document.querySelector('.linha-tempo');
+    var espera=false;
+    function rolar(){
+      espera=false; var y=window.scrollY||0;
+      R.classList.toggle('rolou',y>8);
+      clearTimeout(tv); if(pend.length) tv=setTimeout(varre,180);
+      if(y<160) links.forEach(function(a){a.classList.remove('on')});
+      if(hero&&y<innerHeight) hero.style.setProperty('--py',Math.min(y*.05,hero.offsetHeight*.026).toFixed(1)+'px');
+      if(lt){var r=lt.getBoundingClientRect(); lt.style.setProperty('--p',Math.max(0,Math.min(1,(innerHeight*.78-r.top)/r.height)).toFixed(3));}
+    }
+    window.addEventListener('scroll',function(){if(!espera){espera=true;requestAnimationFrame(rolar)}},{passive:true});
+    window.addEventListener('resize',rolar);
+    rolar();
+
+  }catch(err){R.classList.remove('anim')}
+})();
+</script>
+</body>
+</html>
